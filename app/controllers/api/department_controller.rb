@@ -2,12 +2,13 @@ class Api::DepartmentController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    render json: current.user.departments.all
+    render json: current_user.departments
   end
 
   def create
+   
     @department = current_user.departments.new(department_params)
-    if department.save
+    if @department.save
       render json: @department
     else
       render json: { errors: @department.errors }, status: :unprocessable_entity 
@@ -20,7 +21,8 @@ class Api::DepartmentController < ApplicationController
       render json: @department
     else
       render json: { errors: @department.errors }, status: :unprocessable_entity
-  end
+    end
+end
 
   def destroy
     current_user.departments.find(params[:id]).destroy
