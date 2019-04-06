@@ -8,11 +8,15 @@ import { Switch, Route, } from 'react-router-dom';
 import { Container, } from "semantic-ui-react";
 import FetchUser from './components/FetchUser';
 import ProtectedRoute from './components/ProtectedRoute';
+import NavBarStyle from './components/StylingPage';
+import styled from 'styled-components';
 
 const App = () => (
   <Fragment>
     <FetchUser>
+      <NavBarStyle>
       <Navbar />
+      </NavBarStyle>
       <Container>
         <Switch>
           <ProtectedRoute exact path="/" component={Home} />
