@@ -6,6 +6,15 @@ const Department = ({ id, title, updateDepartment, deleteDepartment }) => (
     <div >
       <div className="center">
         <Header as="h2" style={{ marginLeft: "15px" }}>{title}</Header>
+        <Button 
+          icon 
+          color="red" 
+          size="tiny" 
+          onClick={() => deleteDepartment(id)} 
+          style={{ marginLeft: "15px", }}
+          >
+          <Icon name="trash" />
+        </Button>
       </div>
     </div>
     
