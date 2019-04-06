@@ -814,7 +814,7 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-"@babel/runtime@^7.1.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2":
   version "7.4.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.4.3.tgz#79888e452034223ad9609187a0ad1fe0d2ad4bdc"
   integrity sha512-9lsJwJLxDh/T3Q3SZszfWOTkk3pHbkmH+3KY+zwIDmsNlxsumuhS2TH3NIpktU4kNvfzy+k3eLT7aTJSPTo0OA==
@@ -3096,6 +3096,13 @@ detect-port-alt@1.1.6:
   dependencies:
     address "^1.0.1"
     debug "^2.6.0"
+
+devise-axios@^1.0.24:
+  version "1.0.24"
+  resolved "https://registry.yarnpkg.com/devise-axios/-/devise-axios-1.0.24.tgz#c591da71b16778cc84040db4bfd82534b2c61c19"
+  integrity sha512-IgSQxWxDprWrZwYihqmeRpZffHRXifuTC4HCI98AzJWslUKoH5xK2LireBhnt4CqSFGXxfH4KfJdQ0vvEwS6kg==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
 
 diff@^3.2.0:
   version "3.5.0"
